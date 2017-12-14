@@ -39,4 +39,5 @@ for device in devices:
     print_device(device)
 
 print "\n --- WAITING FOR EVENTS ---"
+glib.threads_init()
 glib.MainLoop().run()
